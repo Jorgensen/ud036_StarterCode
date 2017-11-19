@@ -167,6 +167,7 @@ def open_movies_page(movies):
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
 
+# generate six movies
 wonder_woman = media.Movie("Wonder Woman",
                            "https://i.ytimg.com/vi_webp/95a2aqEAbo8/movieposter.webp",
                            "https://www.youtube.com/watch?v=95a2aqEAbo8&list=PLHPTxTxtC0ibCJB1vtN_-cwL5X-yPiPyO")
@@ -191,6 +192,8 @@ toy_story = media.Movie("Toy Story",
                         "https://i.ytimg.com/vi_webp/c3986gGp3Qs/movieposter.webp",
                         "https://www.youtube.com/watch?v=c3986gGp3Qs")
 
+# put the six movies to a list
 movies = [wonder_woman, spider_man, the_mummy, rough_night, avtar, toy_story]
 
+# open movies page
 open_movies_page(movies)
