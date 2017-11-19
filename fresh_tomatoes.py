@@ -1,6 +1,7 @@
 import webbrowser
 import os
 import re
+import media
 
 
 # Styles and scripting for the page
@@ -165,3 +166,31 @@ def open_movies_page(movies):
     # open the output file in the browser (in a new tab, if possible)
     url = os.path.abspath(output_file.name)
     webbrowser.open('file://' + url, new=2)
+
+wonder_woman = media.Movie("Wonder Woman",
+                           "https://i.ytimg.com/vi_webp/95a2aqEAbo8/movieposter.webp",
+                           "https://www.youtube.com/watch?v=95a2aqEAbo8&list=PLHPTxTxtC0ibCJB1vtN_-cwL5X-yPiPyO")
+
+spider_man = media.Movie("Spider Man",
+                         "https://i.ytimg.com/vi_webp/RO014qcVkJc/movieposter.webp",
+                         "https://www.youtube.com/watch?v=RO014qcVkJc&list=PLHPTxTxtC0ial7mOT-Srrguvokjvlcbg7")
+
+the_mummy = media.Movie("The Mummy",
+                        "https://i.ytimg.com/vi_webp/Z9u6gqqLlB0/movieposter.webp",
+                        "https://www.youtube.com/watch?v=Z9u6gqqLlB0&list=PLHPTxTxtC0ibCJB1vtN_-cwL5X-yPiPyO")
+
+rough_night = media.Movie("Rough Night",
+                          "https://i.ytimg.com/vi_webp/9kJuP0Psu6g/movieposter.webp",
+                          "https://www.youtube.com/watch?v=9kJuP0Psu6g&list=PLHPTxTxtC0iaNb2gYer181oSTHvU3JLmU")
+
+avtar = media.Movie("Avtar",
+                    "https://i.ytimg.com/vi_webp/a0CDJZu4M5I/movieposter.webp",
+                    "https://www.youtube.com/watch?v=a0CDJZu4M5I")
+
+toy_story = media.Movie("Toy Story",
+                        "https://i.ytimg.com/vi_webp/c3986gGp3Qs/movieposter.webp",
+                        "https://www.youtube.com/watch?v=c3986gGp3Qs")
+
+movies = [wonder_woman, spider_man, the_mummy, rough_night, avtar, toy_story]
+
+open_movies_page(movies)
